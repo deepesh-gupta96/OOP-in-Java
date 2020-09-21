@@ -1,3 +1,1 @@
-# IS-5103-OL1-OOP-in-Java
-
-Solving Exercises question of Java Programming by Joyce Farrell 9th Edition
+# IS-5103-OL1-OOP-in-Java/Java Programming by Joyce Farrell 9th Edition
