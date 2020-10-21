@@ -1,0 +1,132 @@
+/*import java.util.Scanner;
+public class InputGrades {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int studentNum = 0;
+        String[] choices = {"Enter new Student", "Display Students information"};
+        String[] OnlyOneChoice = {"Display Students information"};
+        String Choice = "";
+        Student[] studentarray = new Student[10];
+        Student studentObject;
+        int y, z;
+        final int NUM_COURSES = 5;
+        char gradeEntry = ' ';
+        Student stu = new Student();
+        char[] grades = {'A', 'B', 'C', 'D', 'F'};
+        int idEntry = 0;
+        boolean entryStatus = false;
+        String CreditsEntry;
+        String GradeEntry;
+        int credits = -1;
+        String courseEntry = "";
+        String entry;
+
+        for (int i = 0; i<=10;i++){
+        while (!entryStatus) {
+            System.out.println("For student #" + (studentNum + 1) + ", enter the student ID");
+            entry = sc.nextLine();
+            idEntry = Integer.parseInt(entry);
+            if (idEntry == 0)
+                entryStatus = false;
+            else
+                entryStatus = true;
+                /*if (entry == null) {
+                    System.exit(0);
+                }
+                try {
+                    if (entry.isEmpty())
+                        throw new Exception();
+                    idEntry = Integer.parseInt(entry);
+                    if (idEntry == 0)
+                        entryStatus = false;
+                    else
+                        entryStatus = true;
+                } catch (Exception e) {
+                    entryStatus = false;
+                }*/
+
+
+            stu.setID(idEntry);
+            for (y = 0; y < NUM_COURSES; ++y) {
+                boolean CourseEntryStatus = false;
+                while (!CourseEntryStatus) {
+                    System.out.println("For student #" + (studentNum + 1) + ", enter course #" + (y + 1));
+                    courseEntry = sc.nextLine();
+                    CourseEntryStatus = true;
+                   /* if (courseEntry == null) {
+                        System.exit(0);
+                    }
+                    try {
+                        if (courseEntry.isEmpty())
+                            throw new Exception();
+                        else
+                            CourseEntryStatus = true;
+                    } catch (Exception e) {
+                        CourseEntryStatus = false;
+                    }*/
+                }
+
+                boolean CreditEntryStatus = false;
+                while (!CreditEntryStatus) {
+                    System.out.println("For student #" + (studentNum + 1) + ", enter credits for course  #" + (y + 1));
+                    CreditsEntry = sc.nextLine();
+                    credits = Integer.parseInt(CreditsEntry);
+                    if (credits < 0)
+                        CreditEntryStatus = false;
+                    else
+                        CreditEntryStatus = true;
+                    /*if (CreditsEntry == null) {
+                        System.exit(0);
+                    }
+                    try {
+                        if (CreditsEntry.isEmpty())
+                            throw new Exception();
+                        credits = Integer.parseInt(CreditsEntry);
+                        if (credits < 0)
+                            CreditEntryStatus = false;
+                        else
+                            CreditEntryStatus = true;
+                    } catch (Exception e) {
+                        CreditEntryStatus = false;
+                    }*/
+                }
+
+                boolean isGoodGrade = false;
+                while (!isGoodGrade) {
+                    System.out.println("For student #" + (studentNum + 1) + ", enter grade for course  #" + (y + 1));
+                    GradeEntry = sc.nextLine();
+                    if (GradeEntry == null) {
+                        System.exit(0);
+                    }
+                    gradeEntry = GradeEntry.charAt(0);
+                    for (z = 0; z < grades.length; ++z) {
+                        if (gradeEntry == grades[z])
+                            isGoodGrade = true;
+                    }
+                }}
+                CollegeCourse temp = new CollegeCourse();
+                temp.setID(courseEntry);
+                temp.setCredits(credits);
+                temp.setGrade(gradeEntry);
+                stu.setCourse(temp, y);
+            }
+        }
+
+            for (int x = 0; x < studentarray.length; ++x) {
+                if (studentarray[x] == null) {
+                    break;
+                }
+                String message = "Student #" + (x + 1) + "  ID #" + studentarray[x].getID();
+                for (int a = 0; a < 5; ++a) {
+                    new CollegeCourse();
+                    CollegeCourse temp;
+                    temp = studentarray[x].getCourse(a);
+                    message = message + "\n" + temp.getID() + " " + temp.getCredits() + "  -- credits. Grade is "
+                            + temp.getGrade();
+                }
+                System.out.println(message);
+            }
+            studentNum++;
+
+    }
+}*/
